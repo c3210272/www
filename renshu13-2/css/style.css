@@ -17,6 +17,7 @@ a{
     height: 50px;
     line-height: 50px;
     padding-left: 45px;
+    padding-right: 45px;
     box-sizing: border-box;
 }
 a.q2{
