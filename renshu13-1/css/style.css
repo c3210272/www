@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 a.q1:hover{
+    background-color:#ff9f25 ;
+    color:#fff;
 }
 
 /*以下編集しない*/
