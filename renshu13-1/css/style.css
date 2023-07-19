@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
 a.q1:hover{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 /*以下編集しない*/
