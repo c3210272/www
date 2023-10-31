@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>配列の利用</title>
     <style>
-        td{
-            text-align: center;
-        }
         th{
+            background-color: aquamarine;
+            border:solid 1px black;
+        }
+        td{
             text-align: right;
+            border:solid 1px black;
         }
 
     </style>
@@ -18,28 +20,28 @@
 <h1>利用料の計算</h1>
 <table>
     <tr>
-        <td>No.</td>
-        <td>料金(a)</td>
-        <td>人数(b)</td>
-        <td>a×b</td>
+        <th>No.</th>
+        <th>料金(a)</th>
+        <th>人数(b)</th>
+        <th>a×b</th>
     </tr>
     <tr>
-        <td>0</td>
-        <th>500</th>
-        <th>10</th>
-        <th><button onclick="mul0">利用料の合計</button></th>
+        <th>0</th>
+        <td>500</td>
+        <td>10</td>
+        <td><button onclick="mul0">利用料の合計</button></td>
     </tr>
     <tr>
-        <td>1</td>
-        <th>980</th>
-        <th>16</th>
-        <th><button onclick="mul1">利用料の合計</button></th>
+        <th>1</th>
+        <td>980</td>
+        <td>16</td>
+        <td><button onclick="mul1">利用料の合計</button></td>
     </tr>
     <tr>
-        <td>2</td>
-        <th>1200</th>
-        <th>8</th>
-        <th><button onclick="mul2">利用料の合計</button></th>
+        <th>2</th>
+        <td>1200</td>
+        <td>8</td>
+        <td><button onclick="mul2">利用料の合計</button></td>
     </tr>
 
 </table>
