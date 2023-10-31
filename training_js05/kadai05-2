@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>配列の利用</title>
+    <style>
+        td{
+            text-align: center;
+        }
+        th{
+            text-align: right;
+        }
+
+    </style>
 </head>
 <body>
 <h1>利用料の計算</h1>
