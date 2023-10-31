@@ -7,13 +7,49 @@
 </head>
 <body>
 <h1>利用料の計算</h1>
-<button onclick="showPrice_0()";>Sサイズ</button>
-<button onclick="showPrice_1()";>Mサイズ</button>
-<button onclick="showPrice_2()";>Lサイズ</button>
+<table>
+    <tr>
+        <td>No.</td>
+        <td>料金(a)</td>
+        <td>人数(b)</td>
+        <td>a×b</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <th>500</th>
+        <th>10</th>
+        <th><button onclick="mul0">利用料の合計</button></th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <th>980</th>
+        <th>16</th>
+        <th><button onclick="mul1">利用料の合計</button></th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <th>1200</th>
+        <th>8</th>
+        <th><button onclick="mul2">利用料の合計</button></th>
+    </tr>
+
+</table>
 
 <script>
     let a =[500,870,1200];
     let b =[10,16,8];
+    let anser = 0;
+    function mul0(){
+       anser = a[0] * b[0];
+    }
+    function mul1(){
+       anser = a[1] * b[1];
+    }
+    function mul2(){
+       anser = a[2] * b[2];
+    }
+
+
 </script>
 </body>
 </html>
