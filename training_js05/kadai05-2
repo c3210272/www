@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列の利用</title>
+</head>
+<body>
+<h1>利用料の計算</h1>
+<button onclick="showPrice_0()";>Sサイズ</button>
+<button onclick="showPrice_1()";>Mサイズ</button>
+<button onclick="showPrice_2()";>Lサイズ</button>
+
+<script>
+    let a =[500,870,1200];
+    let b =[10,16,8];
+</script>
+</body>
+</html>
