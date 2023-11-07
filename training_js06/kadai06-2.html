@@ -15,14 +15,13 @@
 </head>
 <body>
 <h1>座席の予約</h1>
-<p>東京会場
-    <div id="status">予約受付中</div></p>
+    <p>東京会場<div id="status">(予約受付中)</div></p>
     <div id="button"><button onclick="showAnser">予約する</button></div>
 
 <script>
     function showAnser(){
       let anserbox = document.getElementById('status');
-      anserbox.textContent = '予約済み';
+      anserbox.textContent = '(予約済み)';
       let reserve = document.getElementById('button');
       reserve.innerHTML=<span font-weight:bold>"ありがとうございました。"</span>;
     }
