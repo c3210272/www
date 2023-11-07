@@ -10,7 +10,6 @@
             color:red;
         }
         #button{
-            display: none;
         }
     </style>
 </head>
@@ -26,7 +25,8 @@
     function showAnser(){
       let anserbox = document.getElementById('status');
       anserbox.textContent = '予約済み';
-      let reserve = document.getElementById('button').textContent='ありがとうございました。';
+      let reserve = document.getElementById('button');
+      reserve.innerHTML="ありがとうございました。";
     }
 </script>
 </body>
