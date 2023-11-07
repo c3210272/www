@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>配列の利用</title>
+    <title>要素の取得と内容の変更</title>
     <style>
+        #status{
+            font-weight: bold;
+            color:red;
+        }
 
     </style>
 </head>
 <body>
-<h1>利用料の計算</h1>
+<h1>座席の予約</h1>
+<br>
+<p>東京会場
+    <div id="status">予約受付中</div>
+    <div id="button"><button onclick="showAnser">予約する</button></div>
+</p>
 
 <script>
-    function multiply(a){
-      let anser = a;
-       alert('料金は'+anser+'です');
+    function showAnser(){
+      let anserbox = document.getElementById('status');
+      anserbox.textContent = '予約済み';
+      let reserve = document.getElementById('button').textContent='ありがとうございました。';
     }
 </script>
 </body>
