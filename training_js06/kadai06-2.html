@@ -15,7 +15,6 @@
 </head>
 <body>
 <h1>座席の予約</h1>
-<br>
 <p>東京会場
     <div id="status">予約受付中</div>
     <div id="button"><button onclick="showAnser">予約する</button></div>
@@ -26,7 +25,7 @@
       let anserbox = document.getElementById('status');
       anserbox.textContent = '予約済み';
       let reserve = document.getElementById('button');
-      reserve.innerHTML=<p font-weight:bold>"ありがとうございました。"</p>;
+      reserve.innerHTML=<span font-weight:bold>"ありがとうございました。"</span>;
     }
 </script>
 </body>
