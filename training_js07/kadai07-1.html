@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おはようございます</title>
+    </style>
+    <script>
+        function greetings(){
+            const today = new Date()
+            const hour = today.getHours()
+            if(hour >= 5 && hour <9) return "おはようございます"
+            else if(hour <= 18) return "こんにちは"
+            else return "こんばんは"            
+        }
+
+        console.log(greetings());    
+        const text = document.getElementById('img1');
+        text.innerHTML='console.log()'
+    </script>
+</head>
+<body>
+    <div id="img1"><img src="nhk-logo.webp"></div>
+</body>
+</html>
