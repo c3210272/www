@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>複数の要素の取得</title>
+    <style>
+        ul{
+            list-style:none;
+        }
+    </style>
+</head>
+<body>
+    <h3>人口の多い国ランキング</h3>
+    <ul id = land>
+        <li>1.中国</li>
+        <li>2.インド</li>
+        <li>3.アメリカ</li>
+        <li>4.インドネシア</li>
+    </ul>
+    <button onclick="Flag()">国旗で表示</button>
+
+    <script>
+        
+        function Flag(){
+            let list = document.querySelectorAll('#land li');
+            /*let ind = document.querySelectorAll('#in');
+            let us = document.querySelectorAll('#us');
+            let idn = document.querySelectorAll('#idn');*/
+            list[0].innerHTML = '1.<img src="flag_CHN.png"><br>';
+            list[1].innerHTML = '2.<img src="flag_IND.png"><br>';
+            list[2].innerHTML = '3.<img src="flag_USA.png"><br>';
+            list[3].innerHTML = '4.<img src="flag_IDN.png"><br>';
+        }
+
+    </script>
+</body>
+</html>
