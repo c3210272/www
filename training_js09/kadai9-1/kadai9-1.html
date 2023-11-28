@@ -19,7 +19,7 @@
     function showPicture(){
         let picture = document.getElementById('picture');
         for (let i =0; i<list.length; i++){
-            picture.insertAdjacentHTML ('beforeend','<li>' + list[i] + '</li>');
+            picture.insertAdjacentHTML ('beforeend','<li>' + "<img src='" + list[i] + "'>" + '</li>');
         }
         /*picture.insertAdjacentHTML ('beforeend','<img src="photo_1.jpg">');
         picture.insertAdjacentHTML ('beforeend','<img src="photo_2.jpg">');
