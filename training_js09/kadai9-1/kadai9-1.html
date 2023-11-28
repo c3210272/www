@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="picture">
+    <h1>写真の一覧</h1>
+    <p>以下のボタンをクリックすると、写真が一覧表示されます。</p>
+    <button id="continue" onclick="showPicture()">写真を表示</button>
+    </div>
+<script>
+    function showPicture(){
+        let picture = document.getElementById('picture')
+        picture.insertAdjacentHTML ('beforeend','<img src="photo_1.jpg">');
+        picture.insertAdjacentHTML ('beforeend','<img src="photo_2.jpg">');
+        picture.insertAdjacentHTML ('beforeend','<img src="photo_3.jpg"><br>');
+        picture.insertAdjacentHTML ('beforeend','<img src="photo_4.jpg">');
+        picture.insertAdjacentHTML ('beforeend','<img src="photo_5.jpg">');
+        picture.insertAdjacentHTML ('beforeend','<img src="photo_6.jpg"><br>');
+        picture.insertAdjacentHTML ('beforeend','<img src="photo_7.jpg">');
+        picture.insertAdjacentHTML ('beforeend','<img src="photo_8.jpg">');
+
+        document.getElementById('continue').remove();
+    }
+</script>
+</body>
+</html>
