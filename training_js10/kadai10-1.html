@@ -20,11 +20,11 @@
             const button = document.getElementById('button');
             const hint = document.getElementById('hint');
             if(x == 1){
-                button.textContent = '東北地方にあります。'
-                hint.textContent = '東北地方にあります。'
+                button.innerHTML = '答えを見る'
+                hint.innerHTML = '東北地方にあります。'
                 x == x + 1;
             }else{
-                document.getElementById('message'.textContent = '間違い！')
+                hint.textContent = '答えは「岩手県」です。'
             }
         }
     </script>
