@@ -9,10 +9,9 @@
     <h3>問題</h3>
     <p>もっとも面積が大きい「県」は何県でしょう？</p>
 
-    <div id =button>
-        <button onclick="check(x)">ヒントを見る</button>
-    </div>
-    <p id ="hint">（注意）北海道は「県」ではありません。</p>
+    <button id =button onclick="check()">ヒントを見る</button>
+
+        <p id ="hint">（注意）北海道は「県」ではありません。</p>
 
     <script>
         let x =1;
@@ -24,7 +23,7 @@
                 hint.innerHTML = '東北地方にあります。'
                 x == x + 1;
             }else{
-                hint.textContent = '答えは「岩手県」です。'
+                hint.innerHTML = '答えは「岩手県」です。'
             }
         }
     </script>
