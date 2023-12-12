@@ -6,8 +6,9 @@
 <meta charset="UTF-8">
 <title>breakの活用</title>
 <style>
+big_font{
 
-
+}
 
 
 </style>
@@ -23,7 +24,21 @@
 
 <script>
     function show(){
-        
+        let anser = [];
+        let count=0;
+        let sum = 0;
+        for(let x = 1;x<=100;x++){
+            sum = x**3 - 53*x**2 + 620*x - 1036;
+            if(sum = 0){
+                anser.push(x);
+                count = count ++;
+                if (count >= 3){
+                    break;
+                }
+            }
+        }
+        document.getElementById('message').textContent = anser+'が解です';
+
     }
 </script>
 </body>
