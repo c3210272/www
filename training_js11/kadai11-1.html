@@ -6,7 +6,8 @@
 <meta charset="UTF-8">
 <title>breakの活用</title>
 <style>
-big_font{
+.big_font{
+    font-size: 60px;
 
 }
 
@@ -30,14 +31,14 @@ big_font{
         for(let x = 1;x<=100;x++){
             sum = x**3 - 53*x**2 + 620*x - 1036;
             if(sum = 0){
-                anser.push(x);
+                anser[count] = x;
                 count = count ++;
                 if (count >= 3){
                     break;
                 }
             }
         }
-        document.getElementById('message').textContent = anser+'が解です';
+        document.getElementById('message').innerHTML = anser[0]+'、'+anser[1]+'、'+anser[2]+'が正解です。';
 
     }
 </script>
