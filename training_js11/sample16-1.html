@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3>整数の合計</h3>
+<p>1,2,3,・・・の合計が<br>２００以上になる瞬間は？</p>
+<button onclick="show()">結果を見る</button>
+
+<script>
+    function show(){
+        let anser = 0;
+        let num;
+        for(let i = 1;i<=100;i++){
+            anser = anser + i;
+            if(anser >= 200){
+                break;
+            }
+        }
+        alert('1から'+num+'まで合計すると'+anser+'になります。')
+    }
+</script>
+</body>
+</html>
