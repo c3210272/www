@@ -22,14 +22,12 @@
 <script>
     function show(){
         let text = '';
-        for(let x=2; x<=10000; x*2){
-        for(let i=2; i<=100; i++){
+        for(let i=2; i<=10000; i*2){
             let flag = check(i);
             if(flag){
                 text = text+i;
             }
             document.getElementById('message').textContent = '答えは'+text+'です。';
-        }
     }
 }
     function check(num){
