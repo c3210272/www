@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数の戻り値</title>
+</head>
+<body>
+<h1>入場料</h1>
+<p id="btn" onclick="changePrice()">会員料金に変更</p>
+
+<script>
+    function changePrice(){
+        let memberPrice = discount(1500);
+        document.getElementById('info').textContent
+         ='会員の方の入場料は'+memberPrice+'円です。';
+         document.getElementById('btn').remove();
+    }
+
+    function discount(price){
+        price = price * 0.8;
+        return price;
+    }
+</script>
+</body>
+</html>
