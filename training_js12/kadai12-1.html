@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>関数の戻り値</title>
     <style>
-        #result{
+        #message{
             width: 500px;
             padding: 15px;
             margin:25px 0px;
@@ -14,22 +14,31 @@
     </style>
 </head>
 <body>
-<h1>1~10で割り切れる数字</h1>
+<h1>1~10で割り切れる数</h1>
 <p>1、2、3、4、5、6、7、8、9、10で割り切れる最小の数値をJavascriptで求めます。</p>
-<button id="btn" onclick="keisan()">結果を見る</button>
-<br>
-<div id="result">ここに結果が表示されます。</p>
+<button onclick="show()">結果を見る</button>
+<div id="message">ここに結果が表示されます。</button>
+
 <script>
-    function keisan(){
-        let memberPrice = discount(1500);
-        document.getElementById('info').textContent
-         ='会員の方の入場料は'+memberPrice+'円です。';
-         document.getElementById('btn').remove();
+    function show(){
+        let text = '';
+        for(let x=2; x<=10000; x*2){
+        for(let i=2; i<=100; i++){
+            let flag = check(i);
+            if(flag){
+                text = text+i+'、'
+            }
+            document.getElementById('message').textContent = '答えは'+text+'です。';
+        }
     }
-// ---20%OFF---
-    function discount(price){
-        price = price * 0.8;
-        return price;
+}
+    function check(num){
+        for(let j = 1;j<=10; j++){
+            if(num % j !=0){
+                return false;
+            }
+        }
+        return true;
     }
 </script>
 </body>
