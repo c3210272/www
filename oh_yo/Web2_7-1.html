@@ -16,10 +16,8 @@
         if(hour >= 5 || hour < 9) return "おはようございます";
         else if(hour <= 18) return "こんにちは";
         else return "こんばんは";
-
-    document.getElementById('message').innerHTML = console.log(greetings);
     }
-
+    document.getElementById('message').innerHTML=console.log(greetings());
     </script>
 </body>
 </html>
