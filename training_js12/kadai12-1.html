@@ -31,12 +31,18 @@
     }
 }
     function check(num){
+        let n = 0;
         for(let j = 1;j<=10; j++){
             if(num % j !=0){
-                return false;
+               n++;
+                // return false;
             }
         }
-        return true;
+        if(n == 10){
+            return true;
+        }else{
+            return false;
+        }
     }
 </script>
 </body>
