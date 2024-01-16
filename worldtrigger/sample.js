@@ -1,4 +1,5 @@
-var correctAnswers = 0;
+var correctMainAnswers = 0;
+var correctSubAnswers = 0;
 
 function showOptions(id) {
   // すべての選択肢を非表示にする
@@ -26,28 +27,52 @@ function showOptions(id) {
   }
 }
 
-function checkAnswers() {
-  // 各選択肢ごとに正誤をチェックし、正解なら correctAnswers を増やす
+function checkMainAnswers() {
+  // メイントリガーの正解をチェックし、正解なら correctMainAnswers を増やす
   if (document.getElementById('reigastoOption').checked) {
-    correctAnswers++;
+    correctMainAnswers++;
   }
 
   if (document.getElementById('slusterOption2').checked) {
-    correctAnswers++;
+    correctMainAnswers++;
   }
 
   if (document.getElementById('freeTriggerOption3').checked) {
-    correctAnswers++;
+    correctMainAnswers++;
   }
 
   if (document.getElementById('spiderOption4').checked) {
-    correctAnswers++;
+    correctMainAnswers++;
+  }
+}
+
+function checkSubAnswers() {
+  // サブトリガーの正解をチェックし、正解なら correctSubAnswers を増やす
+  if (document.getElementById('option1').checked) {
+    correctSubAnswers++;
   }
 
-  // 結果を表示
-  var resultElement = document.getElementById('result');
-  resultElement.innerHTML = correctAnswers + "問正解！";
-  var answerElement = document.getElementById('answer');
-    answerElement.innerHTML = "正解：レイガスト、スラスター、FREE TRIGGER、スパイダー";
+  if (document.getElementById('option2_2').checked) {
+    correctSubAnswers++;
+  }
 
+  if (document.getElementById('option3_3').checked) {
+    correctSubAnswers++;
+  }
+
+  if (document.getElementById('option4_4').checked) {
+    correctSubAnswers++;
+  }
+}
+
+function checkAnswers() {
+  // メイントリガーの正解をチェック
+  checkMainAnswers();
+
+  // サブトリガーの正解をチェック
+  checkSubAnswers();
+
+  // メイントリガーとサブトリガーの正解数を表示
+  var resultElement = document.getElementById('result');
+  resultElement.innerHTML = "メイントリガー: " + correctMainAnswers + "問正解<br>サブトリガー: " + correctSubAnswers + "問正解";
 }
