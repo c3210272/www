@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>三雲修：トリガーセット</title>
+</head>
+<body>
+
+<div class="header">
+  <h1>三雲修：トリガーセット</h1>
+</div>
+
+<div class="question-container">
+  <div class="question"><strong>メイントリガー</strong></div>
+
+  <div class="rectangle" onclick="updateOsamu('rectangle1', 'mainTrigger1')"></div>
+  <div class="rectangle" onclick="updateOsamu('rectangle2', 'mainTrigger2')"></div>
+  <div class="rectangle" onclick="updateOsamu('rectangle3', 'mainTrigger3')"></div>
+  <div class="rectangle" onclick="updateOsamu('rectangle4', 'mainTrigger4')"></div>
+
+  <div class="trigger-options" id="rectangle1">
+    <div class="answer-options">
+      <select id="mainTrigger1">
+        <option value="reigasto">レイガスト</option>
+        <option value="sluster">スラスター</option>
+        <option value="bagworm">バッグワーム</option>
+        <option value="spider">スパイダー</option>
+        <option value="asteroid">アステロイド</option>
+        <option value="shield">シールド</option>
+        <option value="freeTrigger">FREE TRIGGER</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="rectangle2">
+    <div class="answer-options">
+      <select id="mainTrigger2">
+        <option value="reigasto">レイガスト</option>
+        <option value="sluster">スラスター</option>
+        <option value="bagworm">バッグワーム</option>
+        <option value="spider">スパイダー</option>
+        <option value="asteroid">アステロイド</option>
+        <option value="shield">シールド</option>
+        <option value="freeTrigger">FREE TRIGGER</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="rectangle3">
+    <div class="answer-options">
+      <select id="mainTrigger3">
+        <option value="reigasto">レイガスト</option>
+        <option value="sluster">スラスター</option>
+        <option value="bagworm">バッグワーム</option>
+        <option value="spider">スパイダー</option>
+        <option value="asteroid">アステロイド</option>
+        <option value="shield">シールド</option>
+        <option value="freeTrigger">FREE TRIGGER</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="rectangle4">
+    <div class="answer-options">
+      <select id="mainTrigger4">
+        <option value="reigasto">レイガスト</option>
+        <option value="sluster">スラスター</option>
+        <option value="bagworm">バッグワーム</option>
+        <option value="spider">スパイダー</option>
+        <option value="asteroid">アステロイド</option>
+        <option value="shield">シールド</option>
+        <option value="freeTrigger">FREE TRIGGER</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- サブトリガーの追加 -->
+  <div class="question"><strong>サブトリガー</strong></div>
+
+  <div class="rectangle" onclick="updateOsamu('subRectangle1', 'subTrigger1')"></div>
+  <div class="rectangle" onclick="updateOsamu('subRectangle2', 'subTrigger2')"></div>
+  <div class="rectangle" onclick="updateOsamu('subRectangle3', 'subTrigger3')"></div>
+  <div class="rectangle" onclick="updateOsamu('subRectangle4', 'subTrigger4')"></div>
+
+  <div class="trigger-options" id="subRectangle1">
+    <div class="answer-options">
+      <select id="subTrigger1">
+        <option value="reigasto">レイガスト</option>
+        <option value="sluster">スラスター</option>
+        <option value="bagworm">バッグワーム</option>
+        <option value="spider">スパイダー</option>
+        <option value="asteroid">アステロイド</option>
+        <option value="shield">シールド</option>
+        <option value="freeTrigger">FREE TRIGGER</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="subRectangle2">
+    <div class="answer-options">
+      <select id="subTrigger2">
+        <option value="reigasto">レイガスト</option>
+        <option value="sluster">スラスター</option>
+        <option value="bagworm">バッグワーム</option>
+        <option value="spider">スパイダー</option>
+        <option value="asteroid">アステロイド</option>
+        <option value="shield">シールド</option>
+        <option value="freeTrigger">FREE TRIGGER</option>        
+      </select>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="subRectangle3">
+    <div class="answer-options">
+      <select id="subTrigger3">
+        <option value="reigasto">レイガスト</option>
+        <option value="sluster">スラスター</option>
+        <option value="bagworm">バッグワーム</option>
+        <option value="spider">スパイダー</option>
+        <option value="asteroid">アステロイド</option>
+        <option value="shield">シールド</option>
+        <option value="freeTrigger">FREE TRIGGER</option>        
+      </select>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="subRectangle4">
+    <div class="answer-options">
+      <select id="subTrigger4">
+        <option value="reigasto">レイガスト</option>
+        <option value="sluster">スラスター</option>
+        <option value="bagworm">バッグワーム</option>
+        <option value="spider">スパイダー</option>
+        <option value="asteroid">アステロイド</option>
+        <option value="shield">シールド</option>
+        <option value="freeTrigger">FREE TRIGGER</option>        
+      </select>
+    </div>
+  </div>
+  <br>
+  <button id="checkAnswerButton" onclick="checkAnswers()">答えを見る</button>
+  <div id="result" class="result"></div>
+  <div id="answer" class="answer"></div>
+
+</div>
+
+<script src="sample.js"></script>
+</body>
+</html>
