@@ -76,3 +76,33 @@ function checkAnswers() {
   var resultElement = document.getElementById('result');
   resultElement.innerHTML = "メイントリガー: " + correctMainAnswers + "問正解<br>サブトリガー: " + correctSubAnswers + "問正解";
 }
+/*function checkAnswers() {
+  // 各選択肢ごとに正誤をチェックし、正解なら correctAnswers を増やす
+  
+  //Answer(1):レイガスト,Answer(2):スラスター,Answer(3):フリートリガー,Answer(4):スパイダー,
+  //Answer(5):アステロイド,Answer(6):シールド,Answer(7):バッグワーム
+  if (document.getElementById('reigasto').checked) {
+    correctAnswers++;
+  }
+
+  if (document.getElementById('sluster').checked) {
+    correctAnswers++;
+  }
+
+  if (document.getElementById('freeTrigger').checked) {
+    correctAnswers++;
+  }
+
+  if (document.getElementById('spider').checked) {
+    correctAnswers++;
+  }
+  
+  if (document.getElementById('asteroid').checked) {
+    correctAnswers++;
+  }
+  if (document.getElementById('shield').checked) {
+    correctAnswers++;
+  }
+  if (document.getElementById('bagwarm').checked) {
+    correctAnswers++;
+  }*/
