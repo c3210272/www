@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>三雲修：トリガーセット</title>
+</head>
+<body>
+
+<div class="header">
+  <h1>三雲修：トリガーセット</h1>
+</div>
+
+<div class="question-container">
+  <div class="question"><strong>メイントリガー</strong></div>
+
+  <div class="rectangle" onclick="showOptions('rectangle1')"></div>
+  <div class="rectangle" onclick="showOptions('rectangle2')"></div>
+  <div class="rectangle" onclick="showOptions('rectangle3')"></div>
+  <div class="rectangle" onclick="showOptions('rectangle4')"></div>
+
+  <div class="trigger-options" id="rectangle1">
+    <div class="answer-options">
+      <input type="radio" name="trigger1" value="reigasto" id="reigastoOption">
+      <label for="reigastoOption">レイガスト</label>
+      <br>
+      <input type="radio" name="trigger1" value="sluster" id="slusterOption">
+      <label for="slusterOption">スラスター</label>
+      <br>
+      <input type="radio" name="trigger1" value="freeTrigger" id="freeTriggerOption">
+      <label for="freeTriggerOption">FREE TRIGGER</label>
+      <br>
+      <input type="radio" name="trigger1" value="spider" id="spiderOption">
+      <label for="spiderOption">スパイダー</label>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="rectangle2">
+    <div class="answer-options">
+      <input type="radio" name="trigger2" value="reigasto" id="reigastoOption2">
+      <label for="reigastoOption2">レイガスト</label>
+      <br>
+      <input type="radio" name="trigger2" value="sluster" id="slusterOption2">
+      <label for="slusterOption2">スラスター</label>
+      <br>
+      <input type="radio" name="trigger2" value="freeTrigger" id="freeTriggerOption2">
+      <label for="freeTriggerOption2">FREE TRIGGER</label>
+      <br>
+      <input type="radio" name="trigger2" value="spider" id="spiderOption2">
+      <label for="spiderOption2">スパイダー</label>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="rectangle3">
+    <div class="answer-options">
+      <input type="radio" name="trigger3" value="reigasto" id="reigastoOption3">
+      <label for="reigastoOption3">レイガスト</label>
+      <br>
+      <input type="radio" name="trigger3" value="sluster" id="slusterOption3">
+      <label for="slusterOption3">スラスター</label>
+      <br>
+      <input type="radio" name="trigger3" value="freeTrigger" id="freeTriggerOption3">
+      <label for="freeTriggerOption3">FREE TRIGGER</label>
+      <br>
+      <input type="radio" name="trigger3" value="spider" id="spiderOption3">
+      <label for="spiderOption3">スパイダー</label>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="rectangle4">
+    <div class="answer-options">
+      <input type="radio" name="trigger4" value="reigasto" id="reigastoOption4">
+      <label for="reigastoOption4">レイガスト</label>
+      <br>
+      <input type="radio" name="trigger4" value="sluster" id="slusterOption4">
+      <label for="slusterOption4">スラスター</label>
+      <br>
+      <input type="radio" name="trigger4" value="freeTrigger" id="freeTriggerOption4">
+      <label for="freeTriggerOption4">FREE TRIGGER</label>
+      <br>
+      <input type="radio" name="trigger4" value="spider" id="spiderOption4">
+      <label for="spiderOption4">スパイダー</label>
+    </div>
+  </div>
+
+  <!-- サブトリガーの追加 -->
+  <div class="question"><strong>サブトリガー</strong></div>
+
+  <div class="rectangle" onclick="showOptions('subRectangle1')"></div>
+  <div class="rectangle" onclick="showOptions('subRectangle2')"></div>
+  <div class="rectangle" onclick="showOptions('subRectangle3')"></div>
+  <div class="rectangle" onclick="showOptions('subRectangle4')"></div>
+
+  <div class="trigger-options" id="subRectangle1">
+    <div class="answer-options">
+      <input type="radio" name="subTrigger1" value="option1" id="option1">
+      <label for="option1">Option 1</label>
+      <br>
+      <input type="radio" name="subTrigger1" value="option2" id="option2">
+      <label for="option2">Option 2</label>
+      <br>
+      <input type="radio" name="subTrigger1" value="option3" id="option3">
+      <label for="option3">Option 3</label>
+      <br>
+      <input type="radio" name="subTrigger1" value="option4" id="option4">
+      <label for="option4">Option 4</label>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="subRectangle2">
+    <div class="answer-options">
+      <input type="radio" name="subTrigger2" value="option1" id="option1_2">
+      <label for="option1_2">Option 1</label>
+      <br>
+      <input type="radio" name="subTrigger2" value="option2" id="option2_2">
+      <label for="option2_2">Option 2</label>
+      <br>
+      <input type="radio" name="subTrigger2" value="option3" id="option3_2">
+      <label for="option3_2">Option 3</label>
+      <br>
+      <input type="radio" name="subTrigger2" value="option4" id="option4_2">
+      <label for="option4_2">Option 4</label>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="subRectangle3">
+    <div class="answer-options">
+      <input type="radio" name="subTrigger3" value="option1" id="option1_3">
+      <label for="option1_3">Option 1</label>
+      <br>
+      <input type="radio" name="subTrigger3" value="option2" id="option2_3">
+      <label for="option2_3">Option 2</label>
+      <br>
+      <input type="radio" name="subTrigger3" value="option3" id="option3_3">
+      <label for="option3_3">Option 3</label>
+      <br>
+      <input type="radio" name="subTrigger3" value="option4" id="option4_3">
+      <label for="option4_3">Option 4</label>
+    </div>
+  </div>
+
+  <div class="trigger-options" id="subRectangle4">
+    <div class="answer-options">
+      <input type="radio" name="subTrigger4" value="option1" id="option1_4">
+      <label for="option1_4">Option 1</label>
+      <br>
+      <input type="radio" name="subTrigger4" value="option2" id="option2_4">
+      <label for="option2_4">Option 2</label>
+      <br>
+      <input type="radio" name="subTrigger4" value="option3" id="option3_4">
+      <label for="option3_4">Option 3</label>
+      <br>
+      <input type="radio" name="subTrigger4" value="option4" id="option4_4">
+      <label for="option4_4">Option 4</label>
+    </div>
+  </div>
+
+  <button id="checkAnswerButton" onclick="checkAnswers()">答えを見る</button>
+  <div id="result" class="result"></div>
+  <div id="answer" class="answer"></div>
+
+</div>
+
+<script src="sample.js"></script>
+</body>
+</html>
