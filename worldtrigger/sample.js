@@ -81,6 +81,7 @@ function checkAnswers() {
   
   //Answer(1):レイガスト,Answer(2):スラスター,Answer(3):フリートリガー,Answer(4):スパイダー,
   //Answer(5):アステロイド,Answer(6):シールド,Answer(7):バッグワーム
+  //ドロップダウンメニュー
   if (document.getElementById('reigasto').checked) {
     correctAnswers++;
   }
