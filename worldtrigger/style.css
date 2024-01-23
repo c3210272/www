@@ -1,68 +1,87 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .question-container {
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-  }
-  
-  .question {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: red;
-  }
-  
-  .rectangle {
-    width: 50px;
-    height: 100px;
-    background-color: #ccc;
-    display: inline-block;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .rectangle.selected {
-    background-color: green;
-  }
-  
-  .trigger-options {
-    display: none;
-  }
-  
-  .answer-options {
-    margin-top: 10px;
-  }
-  
-  #checkAnswerButton {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .result {
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  
-  .answer {
-    margin-top: 10px;
-    font-weight: bold;
-    color: blue;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.question-container {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.question {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: red;
+}
+
+.rectangle {
+  width: 50px;
+  height: 100px;
+  background-color: #ccc;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.rectangle.selected {
+  background-color: green;
+}
+
+
+/* メイントリガーおよびサブトリガーのスタイル */
+.trigger-options {
+  width: 48%; /* メイントリガーとサブトリガーの幅を均等に調整 */
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid #333; /* 適宜ボーダーのスタイルを設定 */
+}
+
+.answer-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.trigger-rectangle {
+  width: 100%;
+  height: 50px; /* 長方形の高さを適宜調整 */
+  background-color: #ddd;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 50px; /* 高さに合わせて中央寄せ */
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+
+#checkAnswerButton {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.answer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: blue;
+}
