@@ -49,8 +49,9 @@ body {
 
 .answer-options {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-left: center;
+ /* justify-content: center;
+  align-items: center;*/
   height: 100%;
 }
 
