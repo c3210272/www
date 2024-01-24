@@ -21,7 +21,6 @@ body {
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 5px;
-  margin-left:center;
   color: red;
 }
 
@@ -38,35 +37,17 @@ body {
   background-color: green;
 }
 
-
-/* メイントリガーおよびサブトリガーのスタイル */
 .trigger-options {
-  width: 48%; /* メイントリガーとサブトリガーの幅を均等に調整 */
-  box-sizing: border-box;
-  padding: 10px;
-  border: 2px solid #333; /* 適宜ボーダーのスタイルを設定 */
-  margin: 0 auto; /* 画面中央に寄せる */
+  display: none;
 }
 
 .answer-options {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  margin-top: 10px;
 }
 
-.trigger-rectangle {
-  width: 100%;
-  height: 50px; /* 長方形の高さを適宜調整 */
-  background-color: #ddd;
-  border: 1px solid #333;
-  text-align: center;
-  line-height: 50px; /* 高さに合わせて中央寄せ */
-  cursor: pointer;
-  margin-top: 5px;
+select {
+  padding: 5px;
 }
-
-
 
 #checkAnswerButton {
   margin-top: 15px;
