@@ -86,7 +86,7 @@ function resetQuiz() {
   document.getElementById("checkAnswerButton").innerText = "答えを見る";
 
   // ボタンのクリックイベントを再設定
-  document.getElementById("checkAnswerButton").onclick = checkAnswers;
+  document.getElementById("checkAnswerButton").onclick = checkAnswers();
 }
 
 // ボタンとラジオボタンの状態を更新する関数
