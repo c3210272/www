@@ -75,6 +75,7 @@ function checkAnswers() {
   // メイントリガーとサブトリガーの正解数を表示
   var resultElement = document.getElementById('result');
   resultElement.innerHTML = "メイントリガー: " + correctMainAnswers + "問正解<br>サブトリガー: " + correctSubAnswers + "問正解";
+  updateButtonAndRadio();
 }
 
 // 「もう一度挑戦！」ボタンが押されたときの処理
